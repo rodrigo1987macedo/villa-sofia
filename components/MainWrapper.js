@@ -49,6 +49,10 @@ class MainWrapper extends React.Component {
             href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap"
+            rel="stylesheet"
+          />
           }} />
         </Head>
         <FontLoader>

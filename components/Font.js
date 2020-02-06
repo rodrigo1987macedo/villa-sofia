@@ -5,17 +5,11 @@ const Fonts = () => {
     weight: 200,
   });
 
-  //const linkPacifico = document.createElement('pacifico');
-
-  //linkPacifico.href =
-  //'https://fonts.googleapis.com/css?family=Pacifico&display=swap';
-  //linkPacifico.rel = 'stylesheet';
-
-  //document.head.appendChild(linkPacifico);
-
   //
 
-  //const roboto = new FontFaceObserver('Roboto');
+  const roboto = new FontFaceObserver('Roboto', {
+    weight: 200,
+  });
 
   //const linkRoboto = document.createElement('roboto');
 
@@ -34,8 +28,8 @@ const Fonts = () => {
 
   pacifico
     .load()
-    .then(function() {
-      console.log('success');
+    .then(() => {
+      roboto.load();
     })
     .catch(() => console.log('failed'));
 
