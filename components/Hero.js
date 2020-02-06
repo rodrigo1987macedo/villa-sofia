@@ -53,6 +53,12 @@ const ContactWrapper = styled.div`
   }
 `;
 
+const WhatsApp = styled.div`
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-flow: column;
+`;
+
 export function Hero(props) {
   return (
     <HeroWrapper>
@@ -61,10 +67,20 @@ export function Hero(props) {
       <ContactWrapper>
         <Contact>
           <div>WhatsApp</div>
-          <Button>
-            <img src="whatsapp.svg" alt="whatsapp" />
-            094 975 419
-          </Button>
+          <WhatsApp>
+            <Button>
+              <a href="https://api.whatsapp.com/send?phone=59894975419">
+                <img src="whatsapp.svg" alt="whatsapp" />
+                094 975 419
+              </a>
+            </Button>
+            <Button>
+              <a href="https://api.whatsapp.com/send?phone=59899389635">
+                <img src="whatsapp.svg" alt="whatsapp" />
+                099 389 635
+              </a>
+            </Button>
+          </WhatsApp>
         </Contact>
         <Contact>
           <div>E-mail</div>

@@ -15,8 +15,13 @@ const ButtonWrapper = styled.div`
     margin: 0 8px 0 0;
   }
   > a {
+    display: flex;
     text-decoration: none;
     color: inherit;
+    > img {
+      width: 12px;
+      margin: 0 8px 0 0;
+    }
   }
 `;
 
