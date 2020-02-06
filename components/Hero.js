@@ -13,11 +13,14 @@ const HeroWrapper = styled.div`
   width: 100vw;
   background-image: url('/hero-background.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 30% 50%;
   .pre-title {
     font-size: 24px;
     margin: 0 0 14px 0;
     color: #e0e0e0;
+  }
+  @media (min-width: 1120px) {
+    background-position: center;
   }
 `;
 
