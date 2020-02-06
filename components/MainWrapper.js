@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Font from './Font';
 
 const FontLoader = styled.div`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 200;
 `;
 

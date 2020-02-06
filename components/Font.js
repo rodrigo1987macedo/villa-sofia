@@ -25,6 +25,7 @@ const Fonts = () => {
 
   pacifico.load().then(() => {
     roboto.load().then(() => {
+      console.log('LOADED');
       document.documentElement.classList.add('pacifico');
       document.documentElement.classList.add('roboto');
     });

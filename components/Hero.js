@@ -19,14 +19,15 @@ const HeroWrapper = styled.div`
     margin: 0 0 14px 0;
     color: #e0e0e0;
   }
-  .title {
-    font-family: 'Pacifico', cursive;
-    font-size: 65px;
-    color: #c5e5f4;
-    margin: 0 0 40px 0;
-    @media (min-width: 1120px) {
-      font-size: 100px;
-    }
+`;
+
+const H1 = styled.h1`
+  font-family: Pacifico, cursive;
+  font-size: 65px;
+  color: #c5e5f4;
+  margin: 0 0 40px 0;
+  @media (min-width: 1120px) {
+    font-size: 100px;
   }
 `;
 
@@ -63,7 +64,7 @@ export function Hero(props) {
   return (
     <HeroWrapper>
       <div className="pre-title">{props.pretitle}</div>
-      <div className="title">{props.title}</div>
+      <H1>{props.title}</H1>
       <ContactWrapper>
         <Contact>
           <div>WhatsApp</div>
