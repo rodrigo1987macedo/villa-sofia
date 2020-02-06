@@ -67,7 +67,7 @@ export function Hero(props) {
           </Button>
         </Contact>
         <Contact>
-          <div>Email</div>
+          <div>E-mail</div>
           <Button>
             <img src="mail.svg" alt="mail" />
             <a href="mailto:villasofiagm@gmail.com">villasofiagm@gmail.com</a>
