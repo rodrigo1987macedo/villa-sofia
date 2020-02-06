@@ -1,19 +1,23 @@
 {
-  "name": "with-styled-components",
+  "name": "with-typescript-styled-components",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "fontfaceobserver": "^2.1.0",
     "next": "latest",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "styled-components": "^4.0.0"
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "styled-components": "^4.1.3",
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.10.0"
   },
   "license": "ISC"
 }
