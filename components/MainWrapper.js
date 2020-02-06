@@ -32,7 +32,7 @@ class MainWrapper extends React.Component {
   render() {
     const {
       children,
-      title = 'Villa Sofía - Residencial para adultos',
+      title = 'Villa Sofía - Residencial para adultos en Montevideo, Uruguay',
       description = 'Residencial para adultos',
     } = this.props;
     return (

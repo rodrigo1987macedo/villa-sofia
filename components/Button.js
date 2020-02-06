@@ -10,18 +10,15 @@ const ButtonWrapper = styled.div`
   font-size: 14px;
   color: black;
   cursor: pointer;
-  > img {
+  img {
     width: 12px;
     margin: 0 8px 0 0;
   }
   > a {
     display: flex;
+    align-items: center;
     text-decoration: none;
     color: inherit;
-    > img {
-      width: 12px;
-      margin: 0 8px 0 0;
-    }
   }
 `;
 
