@@ -107,9 +107,7 @@ export function Gallery(props) {
   return (
     <Section
       title="Galería"
-      subtitle="
-      Ipsum atque ipsa cum quas dicta! Placeat perspiciatis laborue voluptates optio.
-">
+      subtitle="Para sentirse bien como si fuera su propio hogar con atención exclusiva">
       <GalleryWrapper>
         <Carousel>
           {props.images.map((item, index) => (
