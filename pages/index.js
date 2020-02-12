@@ -10,14 +10,14 @@ const services = {
     'bed',
   ],
   'Ambientes amplios': [
-    'Sala de estar con cómodos sillones y comedor',
+    'Sala de estar con cómodos sillones y comedor.',
     'couch',
   ],
   'Cocina moderna': [
-    'Menúes especiales con nutricionista. Amplio espacio',
+    'Menúes especiales con nutricionista. Amplio espacio.',
     'food',
   ],
-  'Espacios verdes': ['Cesped, plantas y flores. Luminocidad natural', 'plant'],
+  'Espacios verdes': ['Cesped, plantas, flores. Luminocidad natural.', 'plant'],
 };
 
 const images = [
