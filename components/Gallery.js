@@ -109,8 +109,8 @@ export function Gallery(props) {
     <Section
       title="Galería"
       subtitle="Para sentirse bien como si fuera su propio hogar con atención exclusiva">
-      <LazyLoad offset={100}>
-        <GalleryWrapper>
+      <GalleryWrapper>
+        <LazyLoad offset={100}>
           <Carousel>
             {props.images.map((item, index) => (
               <ImgContainer key={index} w={index} translation={translation}>
@@ -127,21 +127,21 @@ export function Gallery(props) {
               ))}
             </DotsWrapper>
           </Carousel>
-          <Arrow
-            onClick={() => translationHandler(100, false)}
-            translation={translation}
-            maxImages={props.images.length}
-            inverse>
-            <img src="arrow.png" alt="atrás" />
-          </Arrow>
-          <Arrow
-            onClick={() => translationHandler(-100, false)}
-            translation={translation}
-            maxImages={props.images.length}>
-            <img src="arrow.png" alt="adelante" />
-          </Arrow>
-        </GalleryWrapper>
-      </LazyLoad>
+        </LazyLoad>
+        <Arrow
+          onClick={() => translationHandler(100, false)}
+          translation={translation}
+          maxImages={props.images.length}
+          inverse>
+          <img src="arrow.png" alt="atrás" />
+        </Arrow>
+        <Arrow
+          onClick={() => translationHandler(-100, false)}
+          translation={translation}
+          maxImages={props.images.length}>
+          <img src="arrow.png" alt="adelante" />
+        </Arrow>
+      </GalleryWrapper>
     </Section>
   );
 }
