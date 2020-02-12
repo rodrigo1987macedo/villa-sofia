@@ -15,6 +15,9 @@ const Content = styled.div`
   > div:nth-child(even) {
     background-color: #e1e1e1;
   }
+  > div:nth-child(1) {
+    background-color: #313131;
+  }
   > div:first-child {
     background-color: none;
   }
