@@ -24,7 +24,12 @@ const Content = styled.div`
   > div:nth-child(2),
   > div:nth-child(3) {
     background-image: url('gradient1.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: 600px) {
+      background-image: none;
+    }
   }
 `;
 
