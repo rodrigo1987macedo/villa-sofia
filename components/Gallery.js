@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Section} from '../components/Section';
+import LazyLoad from 'react-lazyload';
 
 const GalleryWrapper = styled.div`
   position: relative;
@@ -108,37 +109,39 @@ export function Gallery(props) {
     <Section
       title="Galería"
       subtitle="Para sentirse bien como si fuera su propio hogar con atención exclusiva">
-      <GalleryWrapper>
-        <Carousel>
-          {props.images.map((item, index) => (
-            <ImgContainer key={index} w={index} translation={translation}>
-              <img src={('/public/', item)} alt={item} />
-            </ImgContainer>
-          ))}
-          <DotsWrapper>
+      <LazyLoad offset={100}>
+        <GalleryWrapper>
+          <Carousel>
             {props.images.map((item, index) => (
-              <Dot
-                key={index}
-                onClick={() => translationHandler(index * -100, true)}
-                currentImg={-translation / 100 === index}
-              />
+              <ImgContainer key={index} w={index} translation={translation}>
+                <img src={('/public/', item)} alt={item} />
+              </ImgContainer>
             ))}
-          </DotsWrapper>
-        </Carousel>
-        <Arrow
-          onClick={() => translationHandler(100, false)}
-          translation={translation}
-          maxImages={props.images.length}
-          inverse>
-          <img src="arrow.png" alt="atrás" />
-        </Arrow>
-        <Arrow
-          onClick={() => translationHandler(-100, false)}
-          translation={translation}
-          maxImages={props.images.length}>
-          <img src="arrow.png" alt="adelante" />
-        </Arrow>
-      </GalleryWrapper>
+            <DotsWrapper>
+              {props.images.map((item, index) => (
+                <Dot
+                  key={index}
+                  onClick={() => translationHandler(index * -100, true)}
+                  currentImg={-translation / 100 === index}
+                />
+              ))}
+            </DotsWrapper>
+          </Carousel>
+          <Arrow
+            onClick={() => translationHandler(100, false)}
+            translation={translation}
+            maxImages={props.images.length}
+            inverse>
+            <img src="arrow.png" alt="atrás" />
+          </Arrow>
+          <Arrow
+            onClick={() => translationHandler(-100, false)}
+            translation={translation}
+            maxImages={props.images.length}>
+            <img src="arrow.png" alt="adelante" />
+          </Arrow>
+        </GalleryWrapper>
+      </LazyLoad>
     </Section>
   );
 }
